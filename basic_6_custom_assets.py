@@ -98,6 +98,7 @@ class Cloud(pygame.sprite.Sprite):
             self.kill
 
 pygame.init()
+clock = pygame.time.Clock()
 
 window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -155,3 +156,5 @@ while running:
             window.blit(spirit.surf, spirit.rect)
 
         pygame.display.flip()
+        
+        clock.tick(30)
