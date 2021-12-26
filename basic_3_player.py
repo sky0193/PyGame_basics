@@ -1,4 +1,3 @@
-from sys import platform
 import pygame
 
 from pygame.locals import (
@@ -22,8 +21,8 @@ class Player(pygame.sprite.Sprite):
         self.surf.fill(self.player_color)
         self.rect = self.surf.get_rect()
 
-pygame.init()
 
+pygame.init()
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600

@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-window = pygame.display.set_mode([500, 500]) 
+window = pygame.display.set_mode([500, 500])
 
 running = True
 while running:
