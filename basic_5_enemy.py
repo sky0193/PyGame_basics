@@ -101,11 +101,15 @@ while running:
                 running = False
         elif event.type == QUIT:
             running = False
-            
+
         if event.type == ADDENEMY:
             new_enemy = Enemy()
             enemies.add(new_enemy)
             all_sprites.add(new_enemy)
+
+        if pygame.sprite.spritecollideany(player, enemies):
+            player.kill()
+            running = False
 
         window.fill(BG_COLLOR)
 
